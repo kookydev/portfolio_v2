@@ -27,8 +27,8 @@
 
 .header-spacer {
   height: 10px;
-  width: calc(100% - 6px);
-  border-width: 0px, 2px, 0px, 2px;
+  width: calc(100% - 4px);
+  border-width: 0px, 4px, 0px, 4px;
   border-style: solid;
   border-image: linear-gradient(to bottom, rgb(0, 255, 0), rgba(0, 0, 0, 0)) 1
     100%;
