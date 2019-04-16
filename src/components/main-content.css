@@ -20,6 +20,12 @@
   margin: 2px;
 }
 
+.techbar-outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .techbar-container {
   border: 1px solid rgb(0, 255, 0);
   border-radius: 5px;
@@ -29,5 +35,6 @@
 .techbar-inner {
   height: 100%;
   background: rgb(0, 255, 0);
-  /* border-radius: 5px; */
+  border-radius: 5px 0px 0px 5px;
+  margin-left: -1px;
 }
