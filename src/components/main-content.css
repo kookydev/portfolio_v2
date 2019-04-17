@@ -1,15 +1,63 @@
 .main-content {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-template-rows: repeat(6, auto);
+  grid-template-columns: repeat(5, 20vw);
+  grid-template-rows: repeat(5, 15vh);
+}
+
+.stats-content {
+  grid-template-areas:
+    ".      .     bar1     .        ."
+    "bar2   bar2  pipboy   bar3   bar3"
+    "bar4   .     pipboy   .   bar5"
+    "bar6   bar6  pipboy   bar7   bar7"
+    ".      bar8  .        bar9     .";
+}
+
+#tech1 {
+  grid-area: bar1;
+  align-self: center;
+}
+#tech2 {
+  grid-area: bar2;
+  align-self: center;
+}
+#tech3 {
+  grid-area: bar3;
+  align-self: center;
+}
+#tech4 {
+  grid-area: bar4;
+  align-self: center;
+}
+#tech5 {
+  grid-area: bar5;
+  align-self: center;
+}
+#tech6 {
+  grid-area: bar6;
+  align-self: center;
+}
+#tech7 {
+  grid-area: bar7;
+  align-self: center;
+}
+#tech8 {
+  grid-area: bar8;
+  align-self: center;
+}
+#tech9 {
+  grid-area: bar9;
+  align-self: center;
 }
 
 #vault-boy {
-  min-width: 30vw;
-  grid-row: 2, span 3;
-  grid-column: 3, span 3;
+  grid-area: pipboy;
+  justify-self: center;
+  align-self: center;
+  height: 100%;
+  max-height: 100%;
 }
 
 .techbar-label {
