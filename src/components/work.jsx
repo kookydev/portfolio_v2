@@ -116,7 +116,6 @@ class Work extends Component {
     return (
       <div className="work-container">
         <WorkList
-          className="work-list"
           current={this.state.current}
           data={this.workData}
           clickHandler={this.clickHandler}
