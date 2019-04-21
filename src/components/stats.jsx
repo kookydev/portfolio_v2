@@ -30,9 +30,9 @@ const Stats = props => {
       <div className="techbar-outer" id="tech8">
         <TechBar label="Swift(iOS)" level="60" />
       </div>
-      <div className="techbar-outer" id="tech9">
+      {/* <div className="techbar-outer" id="tech9">
         <TechBar label="MongoDB" level="35" />
-      </div>
+      </div> */}
       <img id="vault-boy" src={vaultboy} alt="Vault Boy animation" />
     </div>
   );

@@ -5,9 +5,16 @@ const Header = props => {
   return (
     <>
       <div className="header">
-        <HeaderLabel title="STATS" active={true} />
-        <HeaderLabel title="WORK" active={false} />
-        <HeaderLabel title="CONTACT" active={false} />
+        {props.tabs.map((title, index) => {
+          return (
+            <HeaderLabel
+              title={title}
+              active={props.active === index ? true : false}
+              index={index}
+              clickFunc={props.clickFunc}
+            />
+          );
+        })}
       </div>
       <div className="header-spacer" />
     </>
