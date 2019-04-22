@@ -7,14 +7,15 @@ const Stats = props => {
   return (
     <div className="main-content stats-content">
       <div className="techbar-outer" id="tech1">
-        <TechBar label="HTML" level="95" />
+        <TechBar label="Javascript" level="90" />
       </div>
       <div className="techbar-outer" id="tech2">
-        <TechBar label="CSS" level="95" />
+        <TechBar label="HTML" level="95" />
       </div>
       <div className="techbar-outer" id="tech3">
-        <TechBar label="Javascript" level="85" />
+        <TechBar label="CSS" level="95" />
       </div>
+
       <div className="techbar-outer" id="tech4">
         <TechBar label="React.js" level="85" />
       </div>

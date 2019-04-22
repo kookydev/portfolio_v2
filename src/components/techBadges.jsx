@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 
 const TechBadges = props => {
   return (
@@ -8,7 +9,8 @@ const TechBadges = props => {
         {props.techStack.map(tech => {
           return (
             <img
-              src={`../resources/techs/${tech}.png`}
+              style={{ width: "13%" }}
+              src={require(`../resources/techstack/${tech}.png`)}
               alt={tech}
               className="tech-badge"
             />

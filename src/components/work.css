@@ -1,6 +1,8 @@
 .work-container {
   height: 100%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
 }
@@ -8,8 +10,14 @@
 .work-list {
   max-height: 100%;
   width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   overflow-y: auto;
   overflow-x: hidden;
@@ -26,6 +34,7 @@
   font-family: "Nanum Gothic Coding", source-code-pro, Menlo, Monaco, Consolas,
     "Courier New", monospace;
   color: rgb(0, 255, 0);
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
@@ -52,4 +61,19 @@
 .list-current:focus {
   background-color: rgb(0, 255, 0);
   color: rgb(0, 90, 0);
+}
+
+@media only screen and (max-width: 600px) {
+  .work-list {
+    padding-top: 120px;
+    height: 4vh;
+
+    width: 100%;
+  }
+  .work-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }

@@ -17,8 +17,7 @@ class Work extends Component {
         "React",
         "Node",
         "JQuery",
-        "Express",
-        "Swift"
+        "Express"
       ],
       source: "http://github.com/kookydev",
       live: "http://kookydev.github.com"
@@ -34,8 +33,7 @@ class Work extends Component {
         "React",
         "Node",
         "JQuery",
-        "Express",
-        "Swift"
+        "Express"
       ],
       source: "http://github.com/kookydev",
       live: "http://kookydev.github.com"
@@ -51,8 +49,7 @@ class Work extends Component {
         "React",
         "Node",
         "JQuery",
-        "Express",
-        "Swift"
+        "Express"
       ],
       source: "http://github.com/kookydev",
       live: "http://kookydev.github.com"
@@ -68,8 +65,7 @@ class Work extends Component {
         "React",
         "Node",
         "JQuery",
-        "Express",
-        "Swift"
+        "Express"
       ],
       source: "http://github.com/kookydev",
       live: "http://kookydev.github.com"
@@ -85,8 +81,7 @@ class Work extends Component {
         "React",
         "Node",
         "JQuery",
-        "Express",
-        "Swift"
+        "Express"
       ],
       source: "http://github.com/kookydev",
       live: "http://kookydev.github.com"
@@ -102,8 +97,7 @@ class Work extends Component {
         "React",
         "Node",
         "JQuery",
-        "Express",
-        "Swift"
+        "Express"
       ],
       source: "http://github.com/kookydev",
       live: "http://kookydev.github.com"
