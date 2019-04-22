@@ -21,8 +21,8 @@ class Work extends Component {
       description:
         "A todo app created in React with ability to add, delete and flag list items as complete.",
       techStack: ["HTML", "CSS", "Javascript", "React", "Node"],
-      source: "http://github.com/kookydev",
-      live: "http://kookydev.github.com"
+      source: "https://github.com/kookydev/react-todo",
+      live: "https://kookydev-react-todo.netlify.com/"
     },
 
     {
@@ -31,8 +31,8 @@ class Work extends Component {
       description:
         "A functioning calculator created using React.js components with Javascript for the logic and CSS for the styling.",
       techStack: ["HTML", "CSS", "Javascript", "React", "Node"],
-      source: "http://github.com/kookydev",
-      live: "http://kookydev.github.com"
+      source: "https://github.com/kookydev/react-calculator",
+      live: "https://kookydev.github.io/react-calculator/"
     },
     {
       title: "Dice Game",
@@ -49,8 +49,8 @@ class Work extends Component {
       description:
         "A fully responsive clone of the the Netflix landing page, using HTML CSS and Javascript.",
       techStack: ["HTML", "CSS", "Javascript"],
-      source: "http://github.com/kookydev",
-      live: "http://kookydev.github.com"
+      source: "https://github.com/kookydev/metflicks",
+      live: "https://kookydev.github.io/metflicks/"
     },
     {
       title: "Drum Kit",
@@ -58,8 +58,8 @@ class Work extends Component {
       description:
         "A drumkit which demonstrates DOM manipulation and event listeners in Javascript. Use keyboard or mouse / touch to play.",
       techStack: ["HTML", "CSS", "Javascript"],
-      source: "http://github.com/kookydev",
-      live: "http://kookydev.github.com"
+      source: "https://github.com/kookydev/drumkit",
+      live: "https://kookydev.github.io/drumkit/"
     }
   ];
   clickHandler = index => {

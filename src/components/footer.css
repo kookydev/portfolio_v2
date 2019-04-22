@@ -70,6 +70,7 @@
 .footer-hp {
   width: 25vw;
   padding-left: 10px;
+  cursor: pointer;
 }
 
 .footer-hp:hover {
