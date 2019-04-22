@@ -9,42 +9,6 @@ button:focus {
   color: green;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background: radial-gradient(
-    ellipse at center,
-    rgba(0, 128, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  ); /* w3c */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-header:after {
-  content: "";
-  background-image: linear-gradient(transparent, transparent 3px, #222);
-  background-size: 4px 4px;
-  bottom: 0;
-  left: 0;
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 2;
-  transform: scale(1);
-  animation: crt-twitch 20s linear both infinite;
-}
-
 .app-background {
   background: radial-gradient(
     ellipse at center,
@@ -52,9 +16,17 @@ button:focus {
     rgba(0, 0, 0, 1) 100%
   );
   height: 100vh;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   /* justify-content: flex-start; */
   font-size: calc(10px + 2vmin);
@@ -72,47 +44,111 @@ button:focus {
   right: 0;
   top: 0;
   z-index: 20;
+  -webkit-transform: scale(1);
   transform: scale(1);
+  -webkit-animation: crt-twitch 10s linear both infinite;
   animation: crt-twitch 10s linear both infinite;
 }
-@keyframes crt-twitch {
+@-webkit-keyframes crt-twitch {
   0% {
+    -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1;
   }
   1% {
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
     opacity: 0.7;
   }
   7% {
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
     opacity: 1;
   }
   8% {
+    -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 0.7;
   }
   22% {
+    -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1;
   }
   23% {
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
     opacity: 0.7;
   }
   28% {
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
     opacity: 1;
   }
   33% {
+    -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 0.7;
   }
   34% {
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
     opacity: 1;
   }
   40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes crt-twitch {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  1% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    opacity: 0.7;
+  }
+  7% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  8% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  22% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  23% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    opacity: 0.7;
+  }
+  28% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  33% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  34% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1;
   }
@@ -122,40 +158,30 @@ button:focus {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@-webkit-keyframes App-logo-spin {
   from {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 
 .app-background {
-  background: -moz-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(0, 128, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  ); /* ff3.6+ */
-  background: -webkit-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(0, 128, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  ); /* safari5.1+,chrome10+ */
-  background: -o-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(0, 128, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  ); /* opera 11.10+ */
-  background: -ms-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(0, 128, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  ); /* ie10+ */
+  /* ff3.6+ */ /* safari5.1+,chrome10+ */ /* opera 11.10+ */ /* ie10+ */
   background: radial-gradient(
     ellipse at center,
     rgba(0, 128, 0, 1) 0%,
