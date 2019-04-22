@@ -7,98 +7,57 @@ class Work extends Component {
   state = { current: 0 };
   workData = [
     {
+      title: "Weather.io",
+      imgUrl: "weather",
+      description:
+        "A Weather app using 3 RESTful API's to fetch a location, forecast and background image to match the weather.",
+      techStack: ["HTML", "CSS", "Javascript", "React", "Node", "Express"],
+      source: "https://github.com/kookydev/weather-fullstack",
+      live: "https://protected-springs-37746.herokuapp.com/"
+    },
+    {
+      title: "Todo List",
+      imgUrl: "todo",
+      description:
+        "A todo app created in React with ability to add, delete and flag list items as complete.",
+      techStack: ["HTML", "CSS", "Javascript", "React", "Node"],
+      source: "http://github.com/kookydev",
+      live: "http://kookydev.github.com"
+    },
+
+    {
+      title: "React Calculator",
+      imgUrl: "calculator",
+      description:
+        "A functioning calculator created using React.js components with Javascript for the logic and CSS for the styling.",
+      techStack: ["HTML", "CSS", "Javascript", "React", "Node"],
+      source: "http://github.com/kookydev",
+      live: "http://kookydev.github.com"
+    },
+    {
       title: "Dice Game",
-      imgUrl: "../resources/screengrabs/DiceGame.png",
-      description: "A multiplayer Dice Game",
-      techStack: [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "React",
-        "Node",
-        "JQuery",
-        "Express"
-      ],
+      imgUrl: "dice",
+      description:
+        "A multiplayer Dice Game for 1 to 10 players, incorporating a scoreboard, named players and turn-based gameplay.",
+      techStack: ["HTML", "CSS", "Javascript"],
+      source: "https://github.com/kookydev/DiceGame",
+      live: "https://kookydev.github.io/DiceGame/"
+    },
+    {
+      title: "Netflix Clone",
+      imgUrl: "metflicks",
+      description:
+        "A fully responsive clone of the the Netflix landing page, using HTML CSS and Javascript.",
+      techStack: ["HTML", "CSS", "Javascript"],
       source: "http://github.com/kookydev",
       live: "http://kookydev.github.com"
     },
     {
-      title: "Dice Game2",
-      imgUrl: "../resources/screengrabs/DiceGame.png",
-      description: "A multiplayer Dice Game2",
-      techStack: [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "React",
-        "Node",
-        "JQuery",
-        "Express"
-      ],
-      source: "http://github.com/kookydev",
-      live: "http://kookydev.github.com"
-    },
-    {
-      title: "Dice Game3",
-      imgUrl: "../resources/screengrabs/DiceGame.png",
-      description: "A multiplayer Dice Game3",
-      techStack: [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "React",
-        "Node",
-        "JQuery",
-        "Express"
-      ],
-      source: "http://github.com/kookydev",
-      live: "http://kookydev.github.com"
-    },
-    {
-      title: "Dice Game4",
-      imgUrl: "../resources/screengrabs/DiceGame.png",
-      description: "A multiplayer Dice Game4",
-      techStack: [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "React",
-        "Node",
-        "JQuery",
-        "Express"
-      ],
-      source: "http://github.com/kookydev",
-      live: "http://kookydev.github.com"
-    },
-    {
-      title: "Dice Game5",
-      imgUrl: "../resources/screengrabs/DiceGame.png",
-      description: "A multiplayer Dice Game5",
-      techStack: [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "React",
-        "Node",
-        "JQuery",
-        "Express"
-      ],
-      source: "http://github.com/kookydev",
-      live: "http://kookydev.github.com"
-    },
-    {
-      title: "Dice Game6",
-      imgUrl: "../resources/screengrabs/DiceGame.png",
-      description: "A multiplayer Dice Game6",
-      techStack: [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "React",
-        "Node",
-        "JQuery",
-        "Express"
-      ],
+      title: "Drum Kit",
+      imgUrl: "drumkit",
+      description:
+        "A drumkit which demonstrates DOM manipulation and event listeners in Javascript. Use keyboard or mouse / touch to play.",
+      techStack: ["HTML", "CSS", "Javascript"],
       source: "http://github.com/kookydev",
       live: "http://kookydev.github.com"
     }

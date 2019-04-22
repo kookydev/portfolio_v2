@@ -8,11 +8,6 @@
   align-self: flex-end;
 }
 
-.footer-hp {
-  width: 25vw;
-  padding-left: 10px;
-}
-
 .footer-level {
   width: 50vw;
   margin: 0px 4px;
@@ -69,4 +64,24 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.footer-hp {
+  width: 25vw;
+  padding-left: 10px;
+}
+
+.footer-hp:hover {
+  color: rgb(0, 95, 0);
+  background-color: rgb(0, 255, 0);
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    font-size: 1em;
+  }
+  .footer-hp {
+    padding-left: 2px;
+  }
 }

@@ -10,6 +10,7 @@
 .work-list {
   max-height: 100%;
   width: 33%;
+  min-width: 33%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,6 +64,62 @@
   color: rgb(0, 90, 0);
 }
 
+.work-preview-image {
+  border: 2px solid rgb(0, 255, 0);
+  border-radius: 5px;
+  height: 60%;
+}
+
+.work-detail {
+  height: 100%;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 700;
+  font-family: "Nanum Gothic Coding", source-code-pro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
+  color: rgb(0, 255, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  margin: 10px;
+  text-decoration: none;
+  background-color: rgb(0, 90, 0);
+  color: rgb(0, 255, 0);
+  padding: 5px;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: "Nanum Gothic Coding", source-code-pro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
+  color: rgb(0, 255, 0);
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 5px;
+}
+
+a:hover {
+  color: rgb(0, 90, 0);
+  background-color: rgb(0, 255, 0);
+}
+
+.work-link {
+  background-color: rgb(0, 90, 0);
+  color: rgb(0, 255, 0);
+}
+
+.tech-badge {
+  width: 10%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .list-item {
+    font-size: 1.1em;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .work-list {
     padding-top: 120px;
@@ -75,5 +132,12 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+  .work-preview-image {
+    height: 40%;
+    width: auto;
+  }
+  .work-detail {
+    height: 70%;
   }
 }
