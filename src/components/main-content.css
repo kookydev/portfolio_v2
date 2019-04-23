@@ -95,3 +95,53 @@
   border-radius: 5px 0px 0px 5px;
   margin-left: -1px;
 }
+
+.about-modal {
+  position: fixed;
+  width: 0px;
+  height: 0px;
+  border: 2px solid rgb(0, 255, 0);
+  border-style: double;
+  background: rgb(0, 255, 0);
+  color: rgb(0, 90, 0);
+  font-size: 1.2em;
+  font-weight: 700;
+  z-index: -5;
+  font-family: "Nanum Gothic Coding", source-code-pro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-modal-open {
+  width: 90vw;
+  height: auto;
+  max-height: 80vh;
+  z-index: 20;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 2vh 2vw;
+  border-radius: 3px;
+  box-shadow: 10px 10px rgb(0, 80, 0);
+}
+
+.modal-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.modal-close {
+  height: 40px;
+}
+
+.avatar {
+  max-height: 60vh;
+}
+
+.fa-times-circle:hover {
+  transform: scale(1.3);
+}

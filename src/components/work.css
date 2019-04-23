@@ -37,6 +37,7 @@
   color: rgb(0, 255, 0);
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .list-item:hover {
@@ -67,6 +68,10 @@
 .work-preview-image {
   border: 2px solid rgb(0, 255, 0);
   border-radius: 5px;
+  height: 100%;
+}
+
+.work-preview-image-container {
   height: 60%;
 }
 
@@ -84,7 +89,7 @@
   align-items: center;
 }
 
-a {
+.work-link {
   margin: 10px;
   text-decoration: none;
   background-color: rgb(0, 90, 0);
@@ -100,7 +105,7 @@ a {
   border-radius: 5px;
 }
 
-a:hover {
+.work-link:hover {
   color: rgb(0, 90, 0);
   background-color: rgb(0, 255, 0);
 }

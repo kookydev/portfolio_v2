@@ -5,14 +5,29 @@ import Stats from "./components/stats";
 import Work from "./components/work";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
+import About from "./components/about";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStroopwafel } from "@fortawesome/free-solid-svg-icons";
+
+library.add(fa - times - circle);
 
 class App extends Component {
   state = {
-    active: 0
+    active: 0,
+    modal: false
   };
   tabs = ["STATS", "WORK", "CONTACT"];
   tabClickHandler = index => {
     this.setState({ active: index });
+  };
+
+  modalHandler = status => {
+    let tempState = this.state;
+    console.log(this.state);
+    tempState.modal = status;
+    console.log(tempState);
+    this.setState(tempState);
   };
 
   bodyChooser = () => {
@@ -38,7 +53,8 @@ class App extends Component {
           tabs={this.tabs}
         />
         {this.bodyChooser()}
-        <Footer />
+        <About modal={this.state.modal} />
+        <Footer modalHandler={this.modalHandler} />
       </div>
     );
   }
