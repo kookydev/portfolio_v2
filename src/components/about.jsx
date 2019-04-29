@@ -6,10 +6,19 @@ const About = props => {
       className={props.modal ? "about-modal about-modal-open" : "about-modal"}
     >
       <div className="modal-close">
-        <i class="fas fa-times-circle" onClick={() => {props.modalFunc(false)}}/>
+        <i
+          class="fas fa-times-circle"
+          onClick={() => {
+            props.modalFunc(false);
+          }}
+        />
       </div>
       <div className="modal-content">
-        <img src={require("../resources/RockDude.png")} className="avatar" />
+        <img
+          src={require("../resources/RockDude.png")}
+          alt=""
+          className="avatar"
+        />
         <div className="modal-text">
           Name: Kyle <br />
           Likes: Writing Code, Playing guitar, Singing, Learning new things,

@@ -6,7 +6,7 @@ const TechBar = props => {
   return (
     <>
       <div className="techbar-label">{props.label}</div>
-      <Bar level={props.level} height="17px" width="90px" />
+      <Bar level={props.level} height="17px" width="70px" />
     </>
   );
 };

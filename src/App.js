@@ -6,9 +6,6 @@ import Work from "./components/work";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
 import About from "./components/about";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStroopwafel } from "@fortawesome/free-solid-svg-icons";
 
 class App extends Component {
   state = {
