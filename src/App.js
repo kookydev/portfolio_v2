@@ -24,7 +24,6 @@ class App extends Component {
     let tempState = this.state;
     console.log(this.state);
     tempState.modal = status;
-    console.log(tempState);
     this.setState(tempState);
   };
 
@@ -51,7 +50,7 @@ class App extends Component {
           tabs={this.tabs}
         />
         {this.bodyChooser()}
-        <About modal={this.state.modal} />
+        <About modal={this.state.modal} modalFunc={this.modalHandler} />
         <Footer modalHandler={this.modalHandler} />
       </div>
     );
