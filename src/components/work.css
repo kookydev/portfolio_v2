@@ -124,6 +124,10 @@
   .list-item {
     font-size: 1.1em;
   }
+  .work-preview-image {
+    max-width: 97%;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -151,5 +155,29 @@
   }
   .work-detail {
     height: 70%;
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-height: 667px) {
+  .work-list {
+    max-width: 97%;
+    padding-top: 105px;
+    height: 3vh;
+    border: 2px solid green;
+    width: 100%;
+    overflow-x: hidden;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px;
+  }
+  .work-preview-image {
+    height: auto;
+    max-height: 100%;
+    width: 90%;
+  }
+  .work-detail {
+    max-height: 60%;
+    padding-top: 30px;
   }
 }
